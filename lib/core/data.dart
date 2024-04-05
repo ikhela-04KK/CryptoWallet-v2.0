@@ -72,6 +72,8 @@ class TabItem {
   final Widget view;
 }
 
+
+// class for onbording items 
 class OnBoardingItem {
   const OnBoardingItem({
     required this.title,

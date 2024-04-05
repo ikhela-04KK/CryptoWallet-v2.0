@@ -14,7 +14,7 @@ class OnBoardingPage extends StatefulWidget {
 }
 
 class _OnBoardingPageState extends State<OnBoardingPage>
-    with SingleTickerProviderStateMixin {
+  with SingleTickerProviderStateMixin {
   late final AnimationController animationController;
   late final Animation<double> rotationAnimation;
   late final PageController pageController;
@@ -70,6 +70,7 @@ class _OnBoardingPageState extends State<OnBoardingPage>
                     width: 250,
                     top: -32,
                     bottom: -32,
+                    // provide by widgets/wallet.dart
                     child: WalletSide(),
                   ),
                   Positioned.fill(
@@ -149,6 +150,8 @@ class _OnBoardingPageState extends State<OnBoardingPage>
                     onPressed: () {
                       Navigator.of(context).push(
                         MaterialPageRoute<void>(
+
+                          // utlisation de HomePage()
                           builder: (context) => const HomePage(),
                         ),
                       );
@@ -171,6 +174,8 @@ class _OnBoardingPageState extends State<OnBoardingPage>
     return [
       Center(
         child: Text(
+
+          // Provide by core/data.dart
           onBoardingItems[activeIndex].title,
           style: const TextStyle(
             fontSize: 20,

@@ -88,6 +88,10 @@ class _WalletStrapSide extends StatelessWidget {
   }
 }
 
+
+/*
+  - Use by Onboarding
+ */
 class WalletSide extends StatelessWidget {
   const WalletSide({super.key});
 
